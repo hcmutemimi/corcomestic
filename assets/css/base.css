@@ -64,8 +64,8 @@ html{
 }
 .grid__column--2--5{
     width: 19.4871794872%;
+    margin-right: 10px;
 }
-
 .product{
     display: flex;
 }
@@ -73,7 +73,8 @@ html{
     display: flex;
    }
 .grid__column--2--4{
-    width: 25%;
+    width: 24.35897436%;
+    margin-right: 10px;
 }
 .brand{
     display: flex;
@@ -89,6 +90,10 @@ html{
     align-items: center;
 }
 
+.content__row{
+    background-color: #eceeed;
+    width: 1170px;
+}
 /* Animation */
 @keyframes fadeIn{
     from{
