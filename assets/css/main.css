@@ -608,9 +608,10 @@ h1{
     -webkit-line-clamp: 2;
 }
 .label__product--customer{
-    margin-top: 60px;
+    padding-top: 70px;
+    margin: 0 65.5px;
 }
-.content__row--feedback{
+.feedback{
     height: 440px;
 }
 .policy{

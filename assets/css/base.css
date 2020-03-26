@@ -92,7 +92,7 @@ html{
 
 .content__row{
     background-color: #eceeed;
-    width: 1170px;
+    width: 100%;  
 }
 /* Animation */
 @keyframes fadeIn{
