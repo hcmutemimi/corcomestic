@@ -613,6 +613,13 @@ h1{
 }
 .feedback{
     height: 440px;
+    justify-content: center;
+    align-items: center;
+}
+.img--feedback{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
 }
 .policy{
     background-color: var(--third-color);
