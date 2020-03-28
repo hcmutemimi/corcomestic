@@ -196,10 +196,9 @@ height: 18px;
     -ms-animation: ;
     -o-animation: ;
     -moz-animation: ; */
-
-    animation: out ease-in 0.2s;
+    animation: growth ease-in 0.2s;
     /*những thứ thay đổi  */
-    will-change: opacity,transparent;
+    will-change: opacity, transparent;
     display: none;
     top: 36px;
     z-index: 2;
@@ -274,12 +273,17 @@ height: 18px;
     display: block;
     font-size: 1.4rem;
     font-weight: 400;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 .header__notify-describe{
     color:#756F68;
     font-size: 1.3rem;
     display: block;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
     margin: 4px  0;
 }
 .header_notify-footer{
@@ -424,7 +428,7 @@ h1{
 }
 .label__product{
     width: 100%;
-    margin: 15px 0 35px 0;
+    margin: 25px 0 35px 0;
     display: flex;
 }
 .label__product__title{
@@ -524,14 +528,86 @@ h1{
 }
 /* Product */
 .home__product__item{
+    position: relative;
     text-decoration: none;
-    
     display: block;
-    background-color: var(--white-color);
+    background-color: var(--white-color); 
+}
+.grid__column--2--5:hover .btn__cart{
+    display: block;
+}
+.grid__column--2--5:hover{
+    border: 1px solid var(--color-item-product);
+}
+.grid__column--2--5:hover .favourite{
+    display: block;
+}
+.btn__cart{
+    bottom: 0;
+    position: absolute;
+    width: 80%;
+    background-color: rgba(0,0,0, 0.4);
+    color: var(--white-color);
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    display: flex;
+    margin: 0 22.2px;
+    align-items: center;
+    display: none;
+    animation: fadeInbtncart ease-in 0.25s;
+}
+.favourite{
+    top: 20px;
+    right: 18px;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    padding: 7px 6.7px;
+    border-radius: 50%;
+    background-color:#999999;
+    display: flex;
+    align-items: center;
+    display: none;
+    animation: fadeInfavourite ease-in 0.35s;
+}
+.btn__cart:hover{
+    background-color:  var(--color-item-product) ;
+}
+.btn__cart:hover .btn__cart--icon--cricle{
+    background-color:  var(--color-item-product) ;
+}
+.favourite--active{
+    background-color:  var(--color-item-product) ;
+}
+.favourite:hover{
+    background-color: #ff6600;
+}
+.heart--transparent{
+    margin: auto;
+    font-size: 2rem;
+    color: var(--white-color);
+    
 }
 
+.btn__cart--icon--cricle{
+    top: 5px;
+    padding: 7px 0;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1.3px solid var(--white-color);
+    border-radius: 50%;
+    background-color:#999999;
+    margin-left: 16.65px;
+}
+
+.btn__cart--title{
+    margin-left: 60px;
+}
 .home__product__item--img{
-    border: 1px solid rgba(0,0,0, 0.2);
     width: auto;
     height: 224px;
     cursor: pointer;
@@ -539,11 +615,11 @@ h1{
     background-size: cover;
 }
 .home__product__img--info{
-    height: 73px;
-    /* margin: 0 3px; */
+    height: 60px;
+    margin-top: 10px;
 }
 .home__product__img--title{
-   font-size: 1.9rem;
+   font-size: 1.8rem;
    text-align: center;   
    cursor: pointer;
    /* xử lí nhiều chữ*/
@@ -554,14 +630,16 @@ h1{
    -webkit-line-clamp: 1;
 }
 .home__product__img--title:hover{
-    color: var(--primary-color);
+    color: #ff6600;
+    text-decoration: underline;
 }
 .home__product__img--price{
     align-items: baseline;
+    
 }
 .price--new{
     color:#ee439e;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 600; 
     margin-left: 40px;
 }
@@ -608,17 +686,30 @@ h1{
     -webkit-line-clamp: 2;
 }
 .label__product--customer{
+    position: relative;
     padding-top: 70px;
     margin: 0 65.5px;
-}
-.feedback{
-    height: 440px;
+    display: block;
     justify-content: center;
     align-items: center;
 }
+.feedback{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    height: 440px;
+
+}
+.feedback--title{
+    font-size: 1.4rem;
+}
+.feedback--content{
+    font-size: 1.5rem;
+}
 .img--feedback{
+    margin: 0 auto;
     height: 100px;
-    width:100px;
+    width: 100px;
     border-radius: 50%;
 }
 .policy{
