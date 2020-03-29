@@ -542,22 +542,35 @@ h1{
 .grid__column--2--5:hover .favourite{
     display: block;
 }
+.grid__column--2--5:hover .home__product__item--upload{
+    transform: scale(1.1);
+}
+.home__product__item--upload{
+    width: 168px;
+    margin: 8.5px ;
+    margin-left: auto;
+    margin-right: auto;
+    height: 190px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s;
+}
 .btn__cart{
     bottom: 0;
     position: absolute;
-    width: 80%;
+    width: 100%;
     background-color: rgba(0,0,0, 0.4);
     color: var(--white-color);
-    height: 40px;
+    height: 42px;
     border: none;
     outline: none;
     border-radius: 7px;
     font-size: 1.5rem;
     display: flex;
-    margin: 0 22.2px;
     align-items: center;
     display: none;
-    animation: fadeInbtncart ease-in 0.25s;
+    animation: fadeInbtncart ease-in-out 0.35s;
 }
 .favourite{
     top: 20px;
@@ -567,7 +580,8 @@ h1{
     height: 33px;
     padding: 7px 6.7px;
     border-radius: 50%;
-    background-color:#999999;
+    background-color:#313030;
+    opacity: 0.75;
     display: flex;
     align-items: center;
     display: none;
@@ -589,9 +603,7 @@ h1{
     margin: auto;
     font-size: 2rem;
     color: var(--white-color);
-    
 }
-
 .btn__cart--icon--cricle{
     top: 5px;
     padding: 7px 0;
@@ -607,27 +619,22 @@ h1{
 .btn__cart--title{
     margin-left: 60px;
 }
-.home__product__item--img{
-    width: auto;
-    height: 224px;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
+
 .home__product__img--info{
-    height: 60px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 .home__product__img--title{
-   font-size: 1.8rem;
-   text-align: center;   
+   font-size: 1.4rem;
+   color: #7a7878;
+   font-family: Arial, Helvetica, sans-serif;
+    margin: 0 6px;
    cursor: pointer;
    /* xử lí nhiều chữ*/
    overflow: hidden;
-   display: block;
    display: -webkit-box;
    -webkit-box-orient: vertical;
-   -webkit-line-clamp: 1;
+   -webkit-line-clamp: 2;
 }
 .home__product__img--title:hover{
     color: #ff6600;
@@ -635,16 +642,21 @@ h1{
 }
 .home__product__img--price{
     align-items: baseline;
+    padding-bottom: 6px;
     
 }
 .price--new{
-    color:#ee439e;
-    font-size: 1.7rem;
+    color:var(--color-item-product);
+    font-size: 1.6rem;
     font-weight: 600; 
     margin-left: 40px;
 }
+.price--upto{
+    vertical-align: super;
+    font-size: smaller;
+}
 .price--old{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color:#8a8a8a;
     font-weight: 550;
     margin-left: 13px;
