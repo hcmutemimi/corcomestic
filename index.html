@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.12.1-web/css/all.min.css">
     <link rel="shortcut icon" type="image/png" href="https://cor.vn/uploads/source/logoco/logoco.jpg">
@@ -292,289 +293,287 @@
                                     </div>
                             </li>
                         </ul> 
-                        <a href="#"class="header-cart-btn-view-cart btn btn--primary">
+                        <a href="#"class="header-cart-btn-view-cart btn">
                            <span class="header-cart-btn-view-cart-label ">Xem giỏ hàng</span>
                         </a>
                 </div>
                 </div>
             </div>
            </div>
-        <nav class="category">
-            <div class="navbar">
-            <ul class="navbar__menu">
-                 <li class="navbar__menu-item"> 
-                     <a href="trangdiem" class="navbar__menu-item-link "> TRANG CHỦ</a>
-                 </li>
-                 <li class="navbar__menu-item navbar__menu-item--trangdiem"> 
-                     <a href="trangdiem" class="navbar__menu-item-link "> TRANG ĐIỂM</a>
-                     <div class="navbar__list__menu ">
-                         <ul class="navbar__menu__list--sub navbar__menu__list--sub--content1">
-                             <li class="col__submenu ">
-                                 <strong class="title-sub">
-                                 <a href="khuonmat" >KHUÔN MẶT</a></strong>
-                                  <ul class="navbar__list--item">
-                                    <a href="cushion">Cushion</a>
-                                    <a href="kemnen">Kem nền</a>
-                                    <a href="kemnenchekhuyetdiem">Kem nền che khuyết điểm</a>
-                                    <a href="kemlot">Kem lót</a>
-                                    <a href="phanphuphannen">Phấn phủ-Phấn nền</a>
-                                    <a href="mahong">Má hồng</a>
-                                    <a href="taokhoi">Tạo khối-Highlighter</a>
-                                    <a href="xitkhoangnen">Xịt khoáng nền</a>
-                                     </ul>
-                                </li>
-                             <li class="col__submenu ">
-                                 <strong class="title-sub">
-                                 <a href="mat">MẮT</a></strong>
-                                 <ul class="navbar__list--item">
-                                     <a href="mascara">Mascara</a>
-                                     <a href="eyeliner">Eyeliner</a>
-                                     <a href="kemlotmat">Kem lót mắt</a>
-                                     <a href="kemmay">Kẻ mày</a>
-                                     <a href="phanmat">Phấn mắt</a>
-                                </ul>
-                             </li>
-                            <li class="col__submenu ">
-                                 <strong class="title-sub">
-                                 <a href="moi">MÔI</a></strong>
-                                <ul class="navbar__list--item">
-                                    <a href="sonmoi">Son môi</a>
-                                    <a href="sonduong">Son dưỡng</a>
-                                    <a href="chekhuyetdiemmoi">Che khuyết điểm môi</a>
-                                    <a href="matnamoi">Mặt nạ môi</a>
-                                    <a href="taydachetmoi">Tẩy da chết môi</a>
-                                </ul>
-                            </li>
-                        </ul>
-                      </div>
-                 </li>
-                 <li class="navbar__menu-item navbar__menu-item--chamsocda">
-                     <a href="chamsocdamat" class="navbar__menu-item-link">CHĂM SÓC DA</a>
-                     <div class="navbar__list__menu ">
-                        <ul class="navbar__menu__list--sub navbar__menu__list--sub--content2">
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="duongda" >DƯỠNG DA</a></strong>
-                                 <ul class="navbar__list--item">
-                                    <a href="dactri">Đặc trị</a>
-                                    <a href="toner">Toner-Nước hoa hồng</a>
-                                    <a href="Essence">Essence - Serum - Ampouley</a>
-                                    <a href="kemchongnang">Kem chống nắng</a>
-                                    <a href="lotion">Lotion - Sữa dưỡng</a>
-                                    <a href="kemduongda">Kem dưỡng da</a>
-                                    <a href="duongvungmat">Dưỡng vùng mắt</a>
-                                    <a href="boduongda">Bộ dưỡng da</a>
-                                </ul>
-                            </li>
-                            <li class="col__submenu">
-                                <strong class="title-sub">                                
-                                <a href="mat">LÀM SẠCH DA</a></strong>
-                                <ul class="navbar__list--item">
-                                    <a href="suaruamat">Sửa rửa mặt</a>
-                                    <a href="taytrang">Tẩy trang</a>
-                                    <a href="taytebaochet">Tẩy tế bào chết</a>
+            <nav class="navbar">
+                <ul class="navbar__menu">
+                    <li class="navbar__menu-item"> 
+                        <a href="trangdiem" class="navbar__menu-item-link "> TRANG CHỦ</a>
+                    </li>
+                    <li class="navbar__menu-item navbar__menu-item--trangdiem"> 
+                        <a href="trangdiem" class="navbar__menu-item-link "> TRANG ĐIỂM</a>
+                        <div class="navbar__list__menu ">
+                            <ul class="navbar__menu__list--sub navbar__menu__list--sub--content1">
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="khuonmat" >KHUÔN MẶT</a></strong>
+                                    <ul class="navbar__list--item">
+                                        <a href="cushion">Cushion</a>
+                                        <a href="kemnen">Kem nền</a>
+                                        <a href="kemnenchekhuyetdiem">Kem nền che khuyết điểm</a>
+                                        <a href="kemlot">Kem lót</a>
+                                        <a href="phanphuphannen">Phấn phủ-Phấn nền</a>
+                                        <a href="mahong">Má hồng</a>
+                                        <a href="taokhoi">Tạo khối-Highlighter</a>
+                                        <a href="xitkhoangnen">Xịt khoáng nền</a>
+                                        </ul>
+                                    </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="mat">MẮT</a></strong>
+                                    <ul class="navbar__list--item">
+                                        <a href="mascara">Mascara</a>
+                                        <a href="eyeliner">Eyeliner</a>
+                                        <a href="kemlotmat">Kem lót mắt</a>
+                                        <a href="kemmay">Kẻ mày</a>
+                                        <a href="phanmat">Phấn mắt</a>
                                     </ul>
-                            </li>
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="moi">MASK - MẶT NẠ</a></strong>
-                                 <ul class="navbar__list--item">
-                                    <a href="matnalotmun">Mặt nạ lột mun</a>
-                                    <a href="matnadatset">Mặt nạ đất sét</a>
-                                    <a href="matnagiay">Mặt nạ giấy</a>
-                                    <a href="matnangu">Mặt nạ ngủ</a>
-                                    <a href="matnamat">Mặt nạ mắt</a>
-                                </ul>
-                            </li>
-                           </ul>
-                     
-                 </div>
-                 </li>
-                 <li class="navbar__menu-item navbar__menu-item--chamsoccothe">
-                     <a href="chamsocbody" class="navbar__menu-item-link">CHĂM SÓC CƠ THỂ</a>
-                     <div class="navbar__list__menu ">
-                        <ul class="navbar__menu__list--sub navbar__menu__list--sub--content3">
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="suatamdaugoi" >SỬA TẮM, DẦU GỘI</a></strong>
-                                <ul class="navbar__list--item">
+                                </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="moi">MÔI</a></strong>
+                                    <ul class="navbar__list--item">
+                                        <a href="sonmoi">Son môi</a>
+                                        <a href="sonduong">Son dưỡng</a>
+                                        <a href="chekhuyetdiemmoi">Che khuyết điểm môi</a>
+                                        <a href="matnamoi">Mặt nạ môi</a>
+                                        <a href="taydachetmoi">Tẩy da chết môi</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__menu-item navbar__menu-item--chamsocda">
+                        <a href="chamsocdamat" class="navbar__menu-item-link">CHĂM SÓC DA</a>
+                        <div class="navbar__list__menu ">
+                            <ul class="navbar__menu__list--sub navbar__menu__list--sub--content2">
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="duongda" >DƯỠNG DA</a></strong>
+                                    <ul class="navbar__list--item">
+                                        <a href="dactri">Đặc trị</a>
+                                        <a href="toner">Toner-Nước hoa hồng</a>
+                                        <a href="Essence">Essence - Serum - Ampouley</a>
+                                        <a href="kemchongnang">Kem chống nắng</a>
+                                        <a href="lotion">Lotion - Sữa dưỡng</a>
+                                        <a href="kemduongda">Kem dưỡng da</a>
+                                        <a href="duongvungmat">Dưỡng vùng mắt</a>
+                                        <a href="boduongda">Bộ dưỡng da</a>
+                                    </ul>
+                                </li>
+                                <li class="col__submenu">
+                                    <strong class="title-sub">                                
+                                    <a href="mat">LÀM SẠCH DA</a></strong>
+                                    <ul class="navbar__list--item">
+                                        <a href="suaruamat">Sửa rửa mặt</a>
+                                        <a href="taytrang">Tẩy trang</a>
+                                        <a href="taytebaochet">Tẩy tế bào chết</a>
+                                        </ul>
+                                </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="moi">MASK - MẶT NẠ</a></strong>
+                                    <ul class="navbar__list--item">
+                                        <a href="matnalotmun">Mặt nạ lột mun</a>
+                                        <a href="matnadatset">Mặt nạ đất sét</a>
+                                        <a href="matnagiay">Mặt nạ giấy</a>
+                                        <a href="matnangu">Mặt nạ ngủ</a>
+                                        <a href="matnamat">Mặt nạ mắt</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    </li>
+                    <li class="navbar__menu-item navbar__menu-item--chamsoccothe">
+                        <a href="chamsocbody" class="navbar__menu-item-link">CHĂM SÓC CƠ THỂ</a>
+                        <div class="navbar__list__menu ">
+                            <ul class="navbar__menu__list--sub navbar__menu__list--sub--content3">
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="suatamdaugoi" >SỬA TẮM, DẦU GỘI</a></strong>
+                                    <ul class="navbar__list--item">
 
-                                </ul>
-                            </li>
-                            <li class="col__submenu">
-                                <strong class="title-sub">                                
-                                <a href="taylong">TẨY LÔNG</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="thucphamchucnang">THỰC PHẨM CHỨC NĂNG</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="duongthe">DƯỠNG THỂ</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="khumui">KHỬ MÙI</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="duongdatay">DƯỠNG DA TAY</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="duongthe">CHĂM SÓC RĂNG MIỆNG</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="taytebaochet">TẨY TẾ BÀO CHẾT</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="duongmi">DƯỠNG MI</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
+                                    </ul>
+                                </li>
+                                <li class="col__submenu">
+                                    <strong class="title-sub">                                
+                                    <a href="taylong">TẨY LÔNG</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="thucphamchucnang">THỰC PHẨM CHỨC NĂNG</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="duongthe">DƯỠNG THỂ</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="khumui">KHỬ MÙI</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="duongdatay">DƯỠNG DA TAY</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="duongthe">CHĂM SÓC RĂNG MIỆNG</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="taytebaochet">TẨY TẾ BÀO CHẾT</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="duongmi">DƯỠNG MI</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
 
-                        </ul>
-                     
-                 </div>
-                 </li>
-                 <li class="navbar__menu-item navbar__menu-item--nuochoa">
-                     <a href="nuochoa" class="navbar__menu-item-link">NƯỚC HOA</a>
-                     <div class="navbar__list__menu ">
-                        <ul class="navbar__menu__list--sub navbar__menu__list--sub--content4">
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="suatamdaugoi" >NƯỚC HOA</a></strong>
-                                <ul class="navbar__list--item">
-                                    
-                                </ul>
-                            </li>
-                            <li class="col__submenu">
-                                <strong class="title-sub">                                
-                                <a href="taylong">XỊT THƠM BODY</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
                             </ul>
-                     
-                 </div>
-                 </li>
-                 <li class="navbar__menu-item navbar__menu-item--chamsoctoc">
-                     <a href="chamsoctoc" class="navbar__menu-item-link">CHĂM SÓC TÓC</a>
-                     <div class="navbar__list__menu ">
-                        <ul class="navbar__menu__list--sub navbar__menu__list--sub--content5">
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="suatamdaugoi" >DẦU GỘI-XÃ</a></strong>
-                                <ul class="navbar__list--item">
-                                    
+                        
+                    </div>
+                    </li>
+                    <li class="navbar__menu-item navbar__menu-item--nuochoa">
+                        <a href="nuochoa" class="navbar__menu-item-link">NƯỚC HOA</a>
+                        <div class="navbar__list__menu ">
+                            <ul class="navbar__menu__list--sub navbar__menu__list--sub--content4">
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="suatamdaugoi" >NƯỚC HOA</a></strong>
+                                    <ul class="navbar__list--item">
+                                        
+                                    </ul>
+                                </li>
+                                <li class="col__submenu">
+                                    <strong class="title-sub">                                
+                                    <a href="taylong">XỊT THƠM BODY</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
                                 </ul>
-                            </li>
-                            <li class="col__submenu">
-                                <strong class="title-sub">                                
-                                <a href="taylong">SERUM DƯỠNG TÓC</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
+                        
+                    </div>
+                    </li>
+                    <li class="navbar__menu-item navbar__menu-item--chamsoctoc">
+                        <a href="chamsoctoc" class="navbar__menu-item-link">CHĂM SÓC TÓC</a>
+                        <div class="navbar__list__menu ">
+                            <ul class="navbar__menu__list--sub navbar__menu__list--sub--content5">
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="suatamdaugoi" >DẦU GỘI-XÃ</a></strong>
+                                    <ul class="navbar__list--item">
+                                        
+                                    </ul>
+                                </li>
+                                <li class="col__submenu">
+                                    <strong class="title-sub">                                
+                                    <a href="taylong">SERUM DƯỠNG TÓC</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
+                                </ul>
+                        
+                    </div>
+                    </li>
+                    <li class="navbar__menu-item navbar__menu-item--loaida">
+                        <a href="chamsocbody" class="navbar__menu-item-link">LOẠI DA</a>
+                        <div class="navbar__list__menu ">
+                            <ul class="navbar__menu__list--sub navbar__menu__list--sub--content6">
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="suatamdaugoi" >DA DẦU MỤN</a></strong>
+                                    <ul class="navbar__list--item">
+                                        
+                                    </ul>
+                                </li>
+                                <li class="col__submenu">
+                                    <strong class="title-sub">                                
+                                    <a href="taylong">DA NHẢY CẢM</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="suatamdaugoi" >LÃO HÓA DA</a></strong>
+                                    <ul class="navbar__list--item">
+                                        
+                                    </ul>
+                                </li>
+                                <li class="col__submenu">
+                                    <strong class="title-sub">                                
+                                    <a href="taylong">NÁM, SÁNG DA</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
+                                </ul>
+                        
+                    </div>
+                    <li class="navbar__menu-item navbar__menu-item--tapchilamdep">
+                        <a href="tapchilamdep" class="navbar__menu-item-link">TẠP CHÍ LÀM ĐẸP</a>
+                        <div class="navbar__list__menu ">
+                            <ul class="navbar__menu__list--sub navbar__menu__list--sub--content7">
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="suatamdaugoi" >KIẾN THỨC LÀM ĐẸP</a></strong>
+                                    <ul class="navbar__list--item">
+                                        <a href="trangdiemconban">Trang điểm cơ bản</a>
+                                        <a href="meotrangdiem">Mẹo trang điểm</a>
+                                        <a href="xuhuongtrangdiem">Xu hướng trang điểm</a>
+                                    </ul>
+                                </li>
+                                <li class="col__submenu">
+                                    <strong class="title-sub">                                
+                                    <a href="taylong">BÍ QUYẾT CHĂM SÓC DA</a></strong>
+                                    <ul class="navbar__list--item">
+                                        <a href="meochamsocda">Mẹo chăm sóc da</a>
+                                        <a href="xuhuongchamsocda">Xu hướng chăm sóc da</a>
+                                        <a href="trimunhieuqua">Trị mụn hiệu quả</a>
+                                        <a href="chámocdacoban">Chăm sóc da cơ bản</a>
+                                    </ul>
+                                </li>
+                                <li class="col__submenu">
+                                    <strong class="title-sub">                                
+                                    <a href="taylong">REVIEW SẢN PHẨM</a></strong>
+                                    <ul class="navbar__list--item">
+                                        <a href="reviewsanphamchamsocda">Review sản phẩm chăm sóc da</a>
+                                        <a href="reviewsanphamtrangdiem">Review sản phẩm trang điểm</a>
+                                    </ul>
+                                </li>
                             </ul>
-                     
-                 </div>
-                 </li>
-                 <li class="navbar__menu-item navbar__menu-item--loaida">
-                     <a href="chamsocbody" class="navbar__menu-item-link">LOẠI DA</a>
-                     <div class="navbar__list__menu ">
-                        <ul class="navbar__menu__list--sub navbar__menu__list--sub--content6">
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="suatamdaugoi" >DA DẦU MỤN</a></strong>
-                                <ul class="navbar__list--item">
-                                    
+                        
+                    </div>
+                    </li>
+                    <li class="navbar__menu-item navbar__menu-item--hotdeals">
+                        <a href="hotdeals" class="navbar__menu-item-link"> HOT DEALS</a>
+                        <div class="navbar__list__menu ">
+                            <ul class="navbar__menu__list--sub navbar__menu__list--sub--content4">
+                                <li class="col__submenu ">
+                                    <strong class="title-sub">
+                                    <a href="suatamdaugoi" >NƯỚC HOA</a></strong>
+                                    <ul class="navbar__list--item">
+                                        
+                                    </ul>
+                                </li>
+                                <li class="col__submenu">
+                                    <strong class="title-sub">                                
+                                    <a href="taylong">XỊT THƠM BODY</a></strong>
+                                    <ul class="navbar__list--item"></ul>
+                                </li>
                                 </ul>
-                            </li>
-                            <li class="col__submenu">
-                                <strong class="title-sub">                                
-                                <a href="taylong">DA NHẢY CẢM</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="suatamdaugoi" >LÃO HÓA DA</a></strong>
-                                <ul class="navbar__list--item">
-                                    
-                                </ul>
-                            </li>
-                            <li class="col__submenu">
-                                <strong class="title-sub">                                
-                                <a href="taylong">NÁM, SÁNG DA</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
-                            </ul>
-                     
-                 </div>
-                 <li class="navbar__menu-item navbar__menu-item--tapchilamdep">
-                     <a href="tapchilamdep" class="navbar__menu-item-link">TẠP CHÍ LÀM ĐẸP</a>
-                     <div class="navbar__list__menu ">
-                        <ul class="navbar__menu__list--sub navbar__menu__list--sub--content7">
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="suatamdaugoi" >KIẾN THỨC LÀM ĐẸP</a></strong>
-                                <ul class="navbar__list--item">
-                                    <a href="trangdiemconban">Trang điểm cơ bản</a>
-                                    <a href="meotrangdiem">Mẹo trang điểm</a>
-                                    <a href="xuhuongtrangdiem">Xu hướng trang điểm</a>
-                                </ul>
-                            </li>
-                            <li class="col__submenu">
-                                <strong class="title-sub">                                
-                                <a href="taylong">BÍ QUYẾT CHĂM SÓC DA</a></strong>
-                                <ul class="navbar__list--item">
-                                    <a href="meochamsocda">Mẹo chăm sóc da</a>
-                                    <a href="xuhuongchamsocda">Xu hướng chăm sóc da</a>
-                                    <a href="trimunhieuqua">Trị mụn hiệu quả</a>
-                                    <a href="chámocdacoban">Chăm sóc da cơ bản</a>
-                                </ul>
-                            </li>
-                            <li class="col__submenu">
-                                <strong class="title-sub">                                
-                                <a href="taylong">REVIEW SẢN PHẨM</a></strong>
-                                <ul class="navbar__list--item">
-                                    <a href="reviewsanphamchamsocda">Review sản phẩm chăm sóc da</a>
-                                    <a href="reviewsanphamtrangdiem">Review sản phẩm trang điểm</a>
-                                </ul>
-                            </li>
-                        </ul>
-                     
-                 </div>
-                 </li>
-                 <li class="navbar__menu-item navbar__menu-item--hotdeals">
-                     <a href="hotdeals" class="navbar__menu-item-link"> HOT DEALS</a>
-                     <div class="navbar__list__menu ">
-                        <ul class="navbar__menu__list--sub navbar__menu__list--sub--content4">
-                            <li class="col__submenu ">
-                                <strong class="title-sub">
-                                <a href="suatamdaugoi" >NƯỚC HOA</a></strong>
-                                <ul class="navbar__list--item">
-                                    
-                                </ul>
-                            </li>
-                            <li class="col__submenu">
-                                <strong class="title-sub">                                
-                                <a href="taylong">XỊT THƠM BODY</a></strong>
-                                <ul class="navbar__list--item"></ul>
-                            </li>
-                            </ul>
-                     
-                 </div>
-                 </li>
-             </ul>
-            </div>
-         </nav>
+                        
+                    </div>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <div class="container">
             <div class="grid__row"> 
@@ -771,8 +770,7 @@
                             </div>
                            
                         </div>
-                        
-                    </div>
+                        </div>
                     </div>
                     <div class="grid__row-2">
                         <div class="label__product">
@@ -1357,11 +1355,11 @@
                                     <img src="./assets/img/customer4.jpg" alt=""class="img--feedback">
                                     <h3 class="feedback--title">THANH NGÂN</h3>
                                     <span class="feedback--content">Lần đầu mua sản phẩm rất sợ hàng nhái, nhưng khi dùng rồi mới cảm nhận được sản phẩm ok lắm ạ,dùng được hàng chính hãng
-                                        mà còn được giá tốt. Lâu lâu shop có chương trình khuyến mãi. Nhưng sản phẩm shop bán chưa đa dạng, các thương hiệu vẫn còn thiếu 
-                                        nhiều.
+                                        mà còn được giá tốt. Lâu lâu shop có chương trình khuyến mãi. Mong shop bán nhiều mẫu mã hơn, đặc biệt sản phẩm từ Hàn Quốc,Nhật Bản...
+                                       
                                     </span>
                                 </div>
-                                <div class="feedback">
+                                <!-- <div class="feedback">
                                     <img src="./assets/img/customer1.jpg" alt=""class="img--feedback">
                                     <h3 class="feedback--title">YẾN NHI</h3>
                                     <span class="feedback--content">Shop tư vấn nhiệt tình, giao hàng nhanh, đóng gói cẩn thận. Sản phẩm khỏi bàn rồi. Luôn ủng hộ shop, hi vọng shop không
@@ -1378,10 +1376,10 @@
                                 <div class="feedback">
                                     <img src="./assets/img/customer2.jpg" alt=""class="img--feedback">
                                     <h3 class="feedback--title">NHUNG NHUNG</h3>
-                                    <span class="feedback--content">Mình mới biết đến sớm chưa lậu, nhưng hiện tại đã dùng mỹ phẩm hầu hết của bên shop luôn rồi á, hài lòng bởi cách nhiệt tình của nhân viên,
+                                    <span class="feedback--content">Mình mới biết đến shop chưa lâu, nhưng hiện tại đã dùng mỹ phẩm hầu hết của bên shop luôn rồi á, hài lòng bởi cách nhiệt tình của nhân viên,
                                         giá sản phẩm còn thấp hơn giá thị trường.
                                     </span>
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
@@ -1461,8 +1459,70 @@
                         </div>
                         
                     </div>
-            </div>
+                    <div class="grid__row-2 showroom">
+                        <div class="label__product label__product--showroom">
+                            <h2 class="label__showroom">HỆ THỐNG CỬA HÀNG</h2>
+                        </div>
+                        <div class="product--2--4">
+                            <div class="grid__column--2--4">
+                                <div class="home__product__item--showroom">
+                                    <img src="./assets/img/showroomtanphu.jpg" alt=""class="home__product__img--showroom">
+                                    <div class="showroom--opacity"></div>
+                                    <div class="showroom--title">
+                                        <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
+                                        <a href=""class="showroom--opacity--title" >Số 71, Đường số 3, Cư Xá Đô Thành, P4, Quận 3,Hồ Chí Minh</a>
+                                     </div>
+                                     
+                                    <p class="home__product__showroom--title">  
+                                        CN1 Quận 3, TP Hồ Chí Minh
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="grid__column--2--4">
+                                <div class="home__product__item--showroom">
+                                    <img src="./assets/img/showroomQ9.jpg" alt=""class="home__product__img--showroom">
+                                    <div class="showroom--opacity"></div>
+                                    <div class="showroom--title">
+                                        <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
+                                        <a href=""class="showroom--opacity--title"> 79 Hai Bà Trưng, P.Diên Hồng, Tp.Pleiku,Tỉnh Gia Lai </a>
+                                     </div>
+                                    <p class="home__product__showroom--title">  
+                                        CN2 TP Pleiku, Tỉnh Gia Lai
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="grid__column--2--4">
+                                <div class="home__product__item--showroom">
+                                    <img src="./assets/img/showroomhanoi.jpg" alt=""class="home__product__img--showroom">
+                                    <div class="showroom--opacity"></div>
+                                    <div class="showroom--title">
+                                        <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
+                                        <a href=""class="showroom--opacity--title" >98B Phan Đăng Lưu, P.3, Q.Phú Nhuận, Quận 3,Hồ Chí Minh</a>
+                                     </div>
+                                    <p class="home__product__showroom--title">  
+                                        CN3 Quận Phú Nhuận, TP Hồ Chí Minh
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="grid__column--2--4">
+                                <div class="home__product__item--showroom">
+                                    <img src="./assets/img/showroomgialai.jpg" alt=""class="home__product__img--showroom">
+                                    <div class="showroom--opacity"></div>
+                                    <div class="showroom--title">
+                                        <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
+                                        <a href=""class="showroom--opacity--title" >152, Chùa Lộc, Quận Đống Đa, Hà Nội</a>
+                                     </div>
+                                    <p class="home__product__showroom--title">  
+                                        CN4 Quận Đống Đa, Hà Nội
+                                    </p>
+                                </div>
+                            </div>
+                            
+                      
+                        
+                    </div>
            
+             </div>
         </div>
         <footer class="footer">
             <div class="grid__row-4">
@@ -1492,10 +1552,18 @@
                                     </a>
                                 </li>
                                 <li class="address--item">
+                                    <a href="address3"title="152, Chùa Lộc, Quận Đống Đa, Hà Nội" >
+                                        <i class="fas fa-map-marker-alt address--icon"></i>
+                                        <span class="title-header"> Hà Nội -</span> 
+                                        <span class="title--sub">152, Chùa Lộc, Quận Đống Đa, Hà Nội - 0911 384 114</span>
+                                        <img src="./assets/img/maps-compressor.png" alt="152, Chùa Lộc, Quận Đống Đa, Hà Nội">
+                                    </a>
+                                </li>
+                                <li class="address--item">
                                     <a href="address3"title=" 94 Âu Cơ, P.Hòa Khánh Bắc, Q.Liên Chiểu, TP. Đà Nẵng " >
                                         <i class="fas fa-map-marker-alt address--icon"></i>
-                                        <span class="title-header"> Đà Nẵng -</span> 
-                                        <span class="title--sub"> 94 Âu Cơ, P.Hòa Khánh Bắc, Q.Liên Chiểu, TP. Đà Nẵng </span>
+                                        <span class="title-header"> Gia Lai -</span> 
+                                        <span class="title--sub"> 79 Hai Bà Trưng, P.Diên Hồng, Tp.Pleiku,Tỉnh Gia Lai - 0911 384 114</span>
                                         <img src="./assets/img/maps-compressor.png" alt=" 94 Âu Cơ, P.Hòa Khánh Bắc, Q.Liên Chiểu, TP. Đà Nẵng">
                                     </a>
                                 </li>
@@ -1525,25 +1593,40 @@
                             </div>
                             <ul class="address ">
                                 <li class="address--item "> <a href="">Về Cỏ</a></li>
-                                <li class="address--item "><a href="">Liên hệ</a> </li>
+                                <li class="address--item ">Liên hệ trực tiếp:</li>
+                                <li  class="address--item "> <i class="fas fa-phone address--icon"></i>Hotline: 0902611297 - 0329806032 or</li>
+                                <li class="address--item " ><i class="far fa-envelope address--icon"></i>Mail: corcosmetics.skincare@gmail.com</li>
                             </ul>
                         </li>
-                    </ul>
-                </div>
+                        <li class="layout__footer--item">
+                            <div class="layout__footer--header">
+                                <div class="layout__footer--title layout__footer--title--border">
+                                    <h4 >WEBSITE THUỘC QUYỀN</h4>
+                                </div>
+                            </div>
+                            <ul class="address">
+                                <li class="address--item">CÔNG TY CỔ PHẦN CỎ COSMETICS & SKINCARE</li>
+                                <li class="address--item">ĐKKD số: 0314635748</li>   
+                                <li class="address--item">Do Sở KH&ĐT Tp. HCM Cấp ngày 21/09/2017</li>
+                            </ul>
+                        </li>
+                </ul>
+               
+            </div>
         </footer>
     </div>
-    <script>
-        window.onscroll=function(){myScroll()};
-        var navbar =  document.getElementById("navber");
-        var sticky = navbar.offsetTop;
-        function myScroll(){
-            if(window.pageXOffset>=sticky){
-                navbar.classList.add("sticky");
-
-            }else{
-                navbar.classList.remove("sticky");
+ 
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded",function(){
+            var menunho= document.querySelector('navbar');
+            window.addEventListener('scroll',function(){
+            if(window.pageYOffset > 129){
+                menunho.classList.add('navbar-small')
             }
-        }
+            else{
+                menunho.classList.remove('navbar-small')
+            }})
+    },false)
     </script>
 </body>
 </html>
