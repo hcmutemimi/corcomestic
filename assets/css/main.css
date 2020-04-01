@@ -68,6 +68,12 @@
     width: 50%;
     height: 8px;
 }
+.header__navbar_icon:hover{
+    color: var(--color-2);
+}
+.header__navbar_item_link:hover{
+    color: var(--color-2);
+}
 .header__navbar-user-menu::before{
     content: "";
     border: 20px solid;
@@ -1078,11 +1084,12 @@ color: var(--white-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f5fdf6;
+    background-color: var(--white-color);
 }
 .btn--favourite:hover{
     animation: btn-wobble-vertical ease-in-out 1s;
     border-color:var(--color-item-product) ;
+    background-color: #f5fdf6;
 }
 .heart--transparent--2{
     color:rgba(0,0,0,0.5);
@@ -1090,7 +1097,7 @@ color: var(--white-color);
 }
 .header-cart-icon-phone{
     margin: 0 4px 0 12px;
-    color:var(--color-item-product);
+    color:var(--color-2);
     font-size: 1.35rem;
     cursor: pointer;
 }
@@ -1441,11 +1448,13 @@ color: var(--white-color);
     float: right;
     margin: 0 10px 10px 0;
     text-decoration: none;
-    background-color: var(--white-color);
-    color: var(--second-color);
+    background-color: var(--color-2);
+    color: var(--white-color);
 }
-.btn-view-cart:hover{
-   background-color: #f5fdf6;
+.btn.btn-view-cart:hover{
+   background-color: var(--white-color);
+   color: var(--color-item-product);
+
 }
 .btn-view-cart-label{
     margin:  4px auto;
@@ -1492,7 +1501,6 @@ color: var(--white-color);
     background-position: center;
     background-size: contain;
     position: relative;
-
 }
 .showroom--opacity{
     position: absolute;
@@ -1501,17 +1509,17 @@ color: var(--white-color);
     top: -166px;
     left: 0;
     opacity: 0;
-    transition: ease-in-out 0.4s;
+    transition: ease-in-out 0.3s;
     background-color: var(--white-color);
 }
 .showroom--title{
     position: absolute;
-    width: 282.5px;
+    width: 90%;
     height: 100%;
-    top: 20px;
-    left: 0;
+    top: -26px;
+    left: 16px;
     text-align: center;
-    transition: ease-in-out 0.4s;
+    transition: ease-in-out 0.3s;
     opacity: 0;
 }
 .home__product__img--showroom:hover .showroom--opacity{
@@ -1521,14 +1529,13 @@ color: var(--white-color);
 }
 .home__product__img--showroom:hover .showroom--title{
     display: block;
-    top: 0px;
+    top: 40px;
     opacity: 1;
 }
 .showroom--title a{
-    color: var( --color-item-product);
-}
-.showroom--opacity--title{
+    color: var( --color-2);
     display: block;
+    text-decoration: none;
 }
 .address--icon.address--icon--opcity{
     font-size: 1.7em;

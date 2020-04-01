@@ -199,7 +199,7 @@ html{
 .btn{
     min-width:142px;
     height: 34px;
-    border: none;
+    /* border: none; */
     border-radius: 3px;
     font-size: 1.2rem;
     padding: 0 12px;
