@@ -10,16 +10,16 @@
     --text-color:#333;
     --star-gold-color:#FFCE3E;
     --border-color:#dbdbdb;
-    --header-height: 120px;
-    --header-navbar: 40px;
+    --header-height: 140px;
+    --header-navbar: 60px;
     --third-color:rgb(209,233,205);
     --header-with-search: calc(var(--header-height) - var(--header-navbar));
     --height-ul-nav: 1248px;
     --color-item-product:#105f19;
     --color-2: #199427;
     --header: 189px;
-    --header-navbar-content: 60px;
-    --header-navbar-scroll: calc(var(--header) - var(--header-navbar-content));
+   
+    --header-navbar-scroll: calc(var(--header) - var(--header-navbar));
 }
 *{
     box-sizing: inherit;
@@ -37,8 +37,7 @@ html{
 .grid{
     width: 1248px;
     max-width: 100%;
-    margin:  0 auto;
-    margin-bottom: 10px;
+    margin: 0 auto;
 }
 .grid__row{
     display: flex;
@@ -95,14 +94,36 @@ html{
     justify-content: center;
     align-items: center;
 }
-.footer{
-    background-color: #e6e6e6;
-}
+
 .content__row{
     background-color: #eceeed;
     width: 100%;  
 }
 /* Animation */
+@keyframes movephone{
+    16.65%{
+        transform: rotateZ(20deg);
+    }
+    33.3% {
+		transform: translateZ(10deg);
+	}
+    
+    40.95% {
+		transform:  rotateZ(-20deg);
+	}
+
+	66.6% {
+		transform:  rotateZ(10deg);
+	}
+
+	83.25% {
+		transform:  rotateZ(-10deg);
+    }
+    100%{
+        transform:  rotateZ(0deg);
+    }
+
+}
 @keyframes btn-wobble-vertical {
 	16.65% {
 		transform: translateY(3px);
@@ -146,26 +167,7 @@ html{
         transform: translateY(0px);
     }
 }
-/* @keyframes fadeInbtncart{
-    from{
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-@keyframes fadeInfavourite{
-    from{
-        opacity: 0;
-        transform: translateX(27px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-} */
+
 @keyframes fadeOutfavourite{
     from{
         opacity: 1;
@@ -185,16 +187,14 @@ html{
        transform: scale(1);
     }
 }
-/* @keyframes growth-address{
-    from{
-        opacity: 1;
-        transform: translateY(-40px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-} */
+@keyframes rotate360{
+    from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
 
 .btn{
     min-width:142px;
