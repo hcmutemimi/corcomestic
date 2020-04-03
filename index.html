@@ -173,7 +173,7 @@
                                 </li>
                             </ul>
                         </div> -->
-                        <div class="header-search-icon-btn">
+                        <div class="header-search-icon-btn ">
                             <i class="search fas fa-search search-icon"></i>
                         </div>
                     </div>
@@ -560,12 +560,22 @@
                             </ul>
                     </li>
                     <li class="navbar__menu-item navbar__menu-item--hotdeals">
-                        <a href="hotdeals" class="navbar__menu-item-link"> HOT DEALS</a>
-                        
-                   
-                    </li>
+                        <a href="hotdeals" class="navbar__menu-item-link">DEALS</a>
+                     </li>
                 </ul>
+                <div class="header-search-block">
+                    <i class="search fas fa-search search-icon"></i>
+                    <div class="header-search-block--2-wrap">
+                    <div class="header-search-block--2">
+                        <input type="text" title="Tìm kiếm sản phẩm" class = "input--search--2">
+                        <div class="search--2">
+                            <i class="search fas fa-search search-icon"></i>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </nav>
+           
         </header>
         <div class="container">
             <div class="grid__row"> 
@@ -1687,44 +1697,36 @@
             </div>
         </footer>
     </div>
- 
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded",function(){
-            var menunho= document.querySelector('.navbar');
+            var menunho = document.querySelector('.navbar');
             window.addEventListener('scroll',function(){
-            if(window.pageYOffset > 62){
-                menunho.classList.add('navbar-larger')
-            }
-            else{
-                menunho.classList.remove('navbar-larger')
-            }})
+                if(window.pageYOffset > 62){
+                    menunho.classList.add('navbar-larger')
+                }
+                else{
+                    menunho.classList.remove('navbar-larger')
+                }})
+            var blocksearch = document.querySelector('.header-search-block');
+            window.addEventListener('scroll',function(){
+                if(window.pageYOffset >62){
+                    blocksearch.classList.add('header-search-block-small')
+                }else{
+                    blocksearch.classList.remove('header-search-block-small')
+
+                }
+            })
+            // var search = document.querySelector('.header-search');
+            // window.addEventListener('scroll',function(){
+            //     if(window.pageYOffset >62){
+            //         search.classList.add('header-search-small')
+            //     }else{
+            //         search.classList.remove('header-search-small')
+
+            //     }
+            // })
     },false)
     </script>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v6.0'
-        });
-      };
-
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-            attribution= setup_tool
-            page_id="2185082378408212"
-        theme_color="#67b868"
-        logged_in_greeting="Chào bạn đến với Cỏ comestic"
-        logged_out_greeting="Chào bạn đến với Cỏ comestic">
-    </div>
+    
 </body>
 </html>
