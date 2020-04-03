@@ -10,14 +10,13 @@
     --text-color:#333;
     --star-gold-color:#FFCE3E;
     --border-color:#dbdbdb;
-    --header-height: 126px;
-    --header-navbar: 60px;
-    --third-color:rgb(209,233,205);
-    --header-with-search: calc(var(--header-height) - var(--header-navbar));
+   --third-color:rgb(209,233,205);
+    --header-with-search: 76px;
     --height-ul-nav: 1248px;
     --color-item-product:#105f19;
     --color-2: #199427;
-    --header: 189px;
+    --header: 188px;
+    --header-navbar: 60px;
     --header-navbar-scroll: calc(var(--header) - var(--header-navbar));
 }
 *{
