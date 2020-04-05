@@ -36,7 +36,6 @@ html{
     width: 1248px;
     max-width: 100%;
     margin: 0 auto 10px auto;
-    
 }
 .grid__row{
     display: flex;
@@ -68,6 +67,7 @@ html{
     margin-right: 8px;
     border: 1px solid rgba(0,0,0,0.1);
     position: relative;
+    overflow: hidden;
     float: left;
 }
 .slideshow2{
@@ -83,6 +83,7 @@ html{
     height: 292px;
     display: flex;
 }
+
 .slideshow3{
     display: flex;
     width: 1170px;
@@ -170,10 +171,7 @@ html{
     width: 1170px;
     overflow: hidden;
     height: 136.25px;
-
 }
-
-
 .content__row{
     background-color: #eceeed;
     width: 100%;  
@@ -274,7 +272,6 @@ html{
         transform: rotate(360deg);
       }
 }
-
 .btn{
     min-width:142px;
     height: 34px;

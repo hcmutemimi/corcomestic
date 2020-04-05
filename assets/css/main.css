@@ -327,6 +327,7 @@
     margin-top: -128px;
     height: calc(var(--header-navbar));
     display: flex;
+    margin-bottom: 0;
 }
 .container{
     background-color: #fff;
@@ -334,7 +335,7 @@
 .navbar__menu{  
     display: inline-flex;
     padding: 0 54px 0 0;
-    margin: 0 0 0 66px;
+    margin: 0 0 0 74px;
     /* 1106.19 */
     --width-navbar: 1162px;
     width: var( --width-navbar); 
@@ -484,7 +485,7 @@ h1{
     z-index: 2;
     box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.4) ;
     display: none;
-    animation:  fadeInnavbar ease-in 0.35s;
+    animation:  fadeInnavbar linear 0.5s;
 }
 .navbar__menu-item--trangdiem:hover .navbar__menu__list--sub{
     display: inline-flex;
@@ -529,17 +530,17 @@ h1{
     padding: 8px 0 0;
     list-style: none;
 }
-.navbar__list--item a{
+.navbar__list--item li a{
+    transform: translateX(0px);
     display: block;
-    transition: transform ease-in 0.2s;
-    will-change: transform;
+    transition: 0.3s linear;
     font-family: "UTM-Neo-Sans-Intel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .title-sub{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid black; 
   z-index: 5;
 }
-.navbar__list--item a:hover{
+.navbar__list--item li a:hover{
     color: var(--color-2);
     transform: translateX(7px);
 }
@@ -1297,7 +1298,6 @@ color: var(--white-color);
     opacity: 0;
     transition: 0.4s;
 }
-
 .search--2{
     margin: 30px 5px 0 0;
     width: 48px;
@@ -1357,7 +1357,7 @@ color: var(--white-color);
 .header-search-block-small{
     position: fixed;
     top: 6px;
-    right: 100px;
+    right: 99px;
     opacity: 1;
     animation: rotate360 0.4s ;
     animation-delay: 0.5s;
