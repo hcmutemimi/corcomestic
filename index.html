@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
    <link rel="stylesheet" href="./script/script.js">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -18,7 +20,7 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
+            <div class="grid wide">
                 <nav class="header__navbar">
                     <ul class="header__navbar_list ">
                         <li class="header__navbar_item header__navbar_item_has_qr header__navbar_item_separate">Vào cửa hàng
@@ -116,7 +118,7 @@
                 </nav>
                 <!-- header with search -->
                 <div class="header-with-search">
-                    <div class="header-logo">
+                    <div class="header-logo hide-on-table-mobile">
                         <a href="" class="header__logo-link">
                             <!-- <img src="./assets/img/logo.png" alt="" class="header-logo-img" > -->
                             <img src="https://cor.vn/uploads/source/logoco/logoco.jpg" alt="" class="header-logo-img">
@@ -305,21 +307,24 @@
                                         </li>
                                     </ul> 
                                     <a href="#"class="btn-view-cart btn">
-                                    <span class="btn-view-cart-label ">Xem giỏ hàng</span>
+                                    <span class="btn-view-cart-label ">GIỎ HÀNG</span>
                                     </a>
                                 </div>
                                 <span class="header-cart-notice">3
                                 </span>
                              </div>
-                            <i class="fas fa-phone header-cart-icon-phone"></i>
-                            <h4 class="hotline">hotline: 0902611297</h4>
+                             <div class="icon-phone hide-on-table-mobile">
+                                 <i class="fas fa-phone header-cart-icon-phone "></i>
+                                </div>
+                            <h4 class="hotline hide-on-table-mobile">hotline: 0902611297</h4>
                            <!-- No cart class: header-cart-list-no-cart-->
                         </div>
                    
                 </div>
             </div>
            </div>
-            <nav class="navbar">
+           <nav class="navbar hide-on-table-mobile">
+               <div class="navbar-container">
                 <ul class="navbar__menu">
                     <li class="navbar__menu-item"> 
                         <a href="trangdiem" class="navbar__menu-item-link "> TRANG CHỦ </a>
@@ -537,28 +542,28 @@
                                     <strong class="title-sub">
                                     <a href="suatamdaugoi" >KIẾN THỨC LÀM ĐẸP</a></strong>
                                     <ul class="navbar__list--item">
-                                        <a href="trangdiemconban">Trang điểm cơ bản</a>
-                                        <a href="meotrangdiem">Mẹo trang điểm</a>
-                                        <a href="xuhuongtrangdiem">Xu hướng trang điểm</a>
+                                        <li><a href="trangdiemconban">Trang điểm cơ bản</a></li>
+                                        <li> <a href="meotrangdiem">Mẹo trang điểm</a></li>
+                                        <li><a href="xuhuongtrangdiem">Xu hướng trang điểm</a></li>
                                     </ul>
                                 </li>
                                 <li class="col__submenu">
                                     <strong class="title-sub">                                
                                     <a href="taylong">BÍ QUYẾT CHĂM SÓC DA</a></strong>
                                     <ul class="navbar__list--item">
-                                        <a href="meochamsocda">Mẹo chăm sóc da</a>
-                                        <a href="xuhuongchamsocda">Xu hướng chăm sóc da</a>
-                                        <a href="trimunhieuqua">Trị mụn hiệu quả</a>
-                                        <a href="chámocdacoban">Chăm sóc da cơ bản</a>
-                                    </ul>
+                                        <li><a href="meochamsocda">Mẹo chăm sóc da</a></li>
+                                        <li><a href="xuhuongchamsocda">Xu hướng chăm sóc da</a></li>
+                                        <li><a href="trimunhieuqua">Trị mụn hiệu quả</a></li>
+                                        <li> <a href="chámocdacoban">Chăm sóc da cơ bản</a></li>
+                                       </ul>
                                 </li>
                                 <li class="col__submenu">
                                     <strong class="title-sub">                                
                                     <a href="taylong">REVIEW SẢN PHẨM</a></strong>
                                     <ul class="navbar__list--item">
-                                        <a href="reviewsanphamchamsocda">Review sản phẩm chăm sóc da</a>
-                                        <a href="reviewsanphamtrangdiem">Review sản phẩm trang điểm</a>
-                                    </ul>
+                                        <li> <a href="reviewsanphamchamsocda">Review sản phẩm chăm sóc da</a></li>
+                                        <li><a href="reviewsanphamtrangdiem">Review sản phẩm trang điểm</a></li>
+                                       </ul>
                                 </li>
                             </ul>
                     </li>
@@ -566,6 +571,7 @@
                         <a href="hotdeals" class="navbar__menu-item-link">DEALS</a>
                      </li>
                 </ul>
+            </div>
                 <div class="header-search-block">
                     <i class="search fas fa-search search-icon"></i>
                     <div class="header-search-block--2-wrap">
@@ -595,7 +601,6 @@
                     </div>
                 </div>
             </nav>
-           
         </header>
         <div class="container">
             <div class="grid__row"> 
@@ -2098,7 +2103,7 @@
                 </div>
                 <div class="footer--title">
                     <span>
-                        &#169 2020 Cỏ Comestics & Skincare
+                        &#1692020 Cỏ Comestics & Skincare
                     </span>
                 </div>
             </div>
